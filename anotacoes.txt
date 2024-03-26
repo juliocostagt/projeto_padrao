@@ -1,0 +1,28 @@
+Configurações necessárias
+
+
+Criar o .env e enviar todas as variáveis de ambiente necessárias
+configurar o settings com:
+
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+databases (configurar de acordo com o .env)
+
+instalar o app no installed apps
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+DIRS (dentro de templates):
+
+'DIRS': [os.path.join(BASE_DIR, "templates")]
+
+LANGUAGE_CODE = 'pt-br'
+
+TIME_ZONE = 'America/Sao_Paulo'
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'login'
